@@ -1,0 +1,33 @@
+{
+  "name": "cowork-sales",
+  "version": "0.1.0",
+  "description": "Personalized daily sales ritual. 4 skills, 8-channel personalization, smart-suggestion from business-brain.md. Attaches to cowork-ai-os.",
+  "author": "Nuno Tavares",
+  "license": "MIT",
+  "homepage": "https://github.com/AutomatedMarketer/cowork-sales",
+  "skills": [
+    {
+      "name": "onboard-sales",
+      "description": "7-phase personalized wizard. Sets up your daily sales ritual."
+    },
+    {
+      "name": "daily-sales-ritual",
+      "description": "Channel-aware daily fire. 3-column brief + Next Move."
+    },
+    {
+      "name": "rro-email",
+      "description": "Universal reach-out writer. 12-line skeleton + sequence variants + awareness calibration."
+    },
+    {
+      "name": "dream-100",
+      "description": "Top 100 relationship engine. Build/Operate modes, give-2x-before-ask rule."
+    }
+  ],
+  "soft_dependencies": {
+    "cowork-ai-os": ">=0.10.0"
+  },
+  "optional_pairings": {
+    "cowork-obsidian": ">=0.5.0",
+    "cowork-research": ">=0.1.0"
+  }
+}
