@@ -13,14 +13,16 @@
 1. Read the full `sales-preferences.md` — channels, tactics, trigger_time, offer_snapshot.
 2. Invoke `/daily-sales-ritual` ONCE using this session's data as context.
 3. The ritual produces today's sales brief. Display it in full.
-4. The brief MUST end with a `Next move:` block formatted as:
+4. The brief MUST end with the canonical Next Move block (Foundation C — actionable output):
    ```
-   Next move:
-   - Subject: <who to contact or what action to take>
-   - Verb: <exactly what to do — send, call, reply, post>
-   - Timing: <today by [time] | within 24h | right now>
-   - Why: <1-sentence reason this is the highest-leverage move today>
+   ⚡ NEXT MOVE: <Subject> <Verb> <Timing>
+      Why: <1-sentence reason this is the highest-leverage move today>
    ```
+   The block MUST match the regex `⚡ NEXT MOVE: .+ .+ .+\n   Why: .+`. If it doesn't, regenerate.
+
+   Examples of the bar to hit:
+   - ✅ `⚡ NEXT MOVE: Reply to Sarah's email today before 5pm. Why: She's opened 6x silently + clicked twice — warmest lead on your list.`
+   - ❌ `Next move: consider warm outreach.` (lowercase, abstract, no timing — REJECT)
 
 If `/daily-sales-ritual` cannot produce a brief (missing data, connector error) → produce a manual brief from `sales-preferences.md` directly. Note `p7_ritual_fallback: true` in state.
 
