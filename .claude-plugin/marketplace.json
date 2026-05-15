@@ -1,10 +1,14 @@
 {
   "name": "cowork-sales",
-  "title": "Cowork Sales",
   "description": "Your personalized daily sales ritual, attached to your Cowork AI OS.",
-  "author": "Nuno Tavares",
-  "version": "0.1.0",
-  "license": "MIT",
-  "homepage": "https://github.com/AutomatedMarketer/cowork-sales",
-  "plugins": ["cowork-sales"]
+  "owner": {
+    "name": "AutomatedMarketer"
+  },
+  "plugins": [
+    {
+      "name": "cowork-sales",
+      "source": "./cowork-sales",
+      "homepage": "https://github.com/AutomatedMarketer/cowork-sales"
+    }
+  ]
 }
