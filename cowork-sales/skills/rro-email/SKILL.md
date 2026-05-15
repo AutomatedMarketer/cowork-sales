@@ -1,8 +1,6 @@
 ---
 name: rro-email
 description: "Universal reach-out writer. Works for email, DM, comment, voice note, Loom. Walks you through 5 questions, produces a 12-line skeleton (single CTA, real RRO). Sequences available when needed. Auto-calibrates to the recipient's awareness level."
-license: MIT
-author: Nuno Tavares
 ---
 
 # /rro-email

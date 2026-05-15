@@ -1,8 +1,6 @@
 ---
 name: daily-sales-ritual
 description: "The 3pm fire. Reads your channels + tactics. Builds your 3-column brief (Email Pipeline + Yesterday's Activity + Overdue Follow-Ups). Rotates an outbound prompt SPECIFIC to your channels. Ends with a Next Move you can do in 20-60 minutes."
-license: MIT
-author: Nuno Tavares
 ---
 
 # /daily-sales-ritual
