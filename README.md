@@ -7,7 +7,7 @@
 
 **Your personalized daily sales ritual, attached to your Cowork AI OS.**
 
-A [Claude Cowork](https://claude.com/product/claude-code) plugin that gives you a daily sales rhythm — personalized to where YOUR buyers actually hang out. 7-phase setup wizard. Channel-aware brief every morning. Reach-out writer for warm conversations. Optional Top 100 relationship engine. Everything ties back to what's already in your business brain, so it knows your offer, your buyers, and your voice before it gives you a single suggestion.
+A [Claude Cowork](https://claude.com/product/claude-code) plugin (also runs in Claude Code) that gives you a daily sales rhythm — personalized to where YOUR buyers actually hang out. 7-phase setup wizard. Channel-aware brief every morning. Reach-out writer for warm conversations. Optional Top 100 relationship engine. Everything ties back to what's already in your business brain, so it knows your offer, your buyers, and your voice before it gives you a single suggestion.
 
 Built by [Nuno Tavares](https://nunomtavares.com) for [VCInc](https://vcinc.com) cohort students and anyone who knows they should do daily sales activity — but keeps skipping it because they don't have a clear system.
 
@@ -39,11 +39,28 @@ Built by [Nuno Tavares](https://nunomtavares.com) for [VCInc](https://vcinc.com)
 /plugin install cowork-sales@cowork-sales
 ```
 
-### Option 3 — Mac fallback (if marketplace has issues)
+## ✅ Mac install (recommended): zip upload
 
-1. Download `cowork-sales.zip` from the [latest release](https://github.com/AutomatedMarketer/cowork-sales/releases/latest)
-2. Open Claude Desktop → your name → **Settings**
-3. **Plugins** → **Install from file** → pick the zip
+This is the recommended install path for all Mac users. It bypasses Anthropic's open Cowork-on-macOS bugs ([#26951](https://github.com/anthropics/claude-code/issues/26951), [#28125](https://github.com/anthropics/claude-code/issues/28125)) and works on every Cowork build that supports plugin uploads. Workaround confirmed by users in [#39400](https://github.com/anthropics/claude-code/issues/39400).
+
+1. Download the latest **`cowork-sales-v0.1.0.zip`** from the [Releases page](https://github.com/AutomatedMarketer/cowork-sales/releases/latest). **Don't extract it.** Keep the file as a single `.zip`.
+
+   > ⚠️ **Do NOT use the green "Download ZIP" button on the repo's main page.** That button wraps the repo in an outer folder (`cowork-sales-main/`), which double-nests the plugin and breaks Cowork's validator. Always grab the zip from the **Releases page → Assets** section.
+2. Open Claude Cowork (the middle tab in Claude Desktop).
+3. Go to **Customize** → **Browse plugins** → look for the option to **upload a custom plugin file**
+   > *Menu wording may vary slightly between Cowork versions — look for an "Upload", "Custom plugin", or "From file" option.*
+4. Drag in the zip. Wait for confirmation.
+5. **Open a brand new Cowork task** (skills load on session start, not retroactively).
+6. Type `/onboard-sales` and follow the wizard.
+
+> **Why is this the recommended Mac path?** Anthropic closed [#27196](https://github.com/anthropics/claude-code/issues/27196) ("All Anthropic plugins fail in Cowork on macOS") as **not planned** — they don't currently intend to fix the marketplace path on Mac. The zip-upload path is effectively the supported install method on macOS going forward.
+
+| Issue | Fix |
+|---|---|
+| Can't find "Upload" / "Custom plugin" option | Look for "From file" / "Local plugin" / "Add manually". If genuinely absent, your Cowork version is older than the upload feature — quit, update Claude Desktop, relaunch. |
+| Upload rejects the file | Confirm the file extension is `.zip` (not `.plugin`). Re-download directly from the Release page; don't rename. |
+| Plugin uploads but `/onboard-sales` does nothing | Open a **brand new** Cowork task. Skills load on session start, not retroactively. |
+| Plugin disappears after restart | That's [#38429](https://github.com/anthropics/claude-code/issues/38429) — Anthropic-side persistence bug. Re-upload the zip after restart. |
 
 ---
 
