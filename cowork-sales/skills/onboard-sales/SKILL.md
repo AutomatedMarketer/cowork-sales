@@ -1,6 +1,6 @@
 ---
 name: onboard-sales
-description: "7-phase personalized wizard. Sets up your daily sales ritual on top of cowork-ai-os. Reads business-brain.md, detects where your clients hang out, picks tactics, schedules daily fire. Ends with a live demo of /daily-sales-ritual. ≤15 minutes."
+description: "7-phase personalized wizard. Sets up your daily sales ritual on top of cowork-ai-os. Reads business-brain.md, detects where your clients hang out, picks tactics, schedules daily fire. Ends with a live demo of /daily-sales-ritual. Under 15 minutes."
 ---
 
 # /onboard-sales

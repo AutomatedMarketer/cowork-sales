@@ -1,6 +1,6 @@
 ---
 name: dream-100
-description: "The relationship engine. Helps you cultivate 100 deliberate relationships with people whose audiences match your ICP. Two modes — Build (if your list is empty, helps you start) or Operate (if you have 5+ names, surfaces touches and enforces give-2x-before-ask). Data-driven mode switching."
+description: "The relationship engine. Helps you cultivate 100 deliberate relationships with people whose audiences match your ICP. Two modes: Build (if list is empty, helps you start) or Operate (if 5+ names, surfaces touches and enforces give-2x-before-ask). Data-driven mode switching."
 ---
 
 # /dream-100
